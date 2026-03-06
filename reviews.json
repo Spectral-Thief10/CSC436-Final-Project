@@ -1,0 +1,468 @@
+{
+    "data": {
+        "professionalProfileDisplayReviewsByEncodedZuid": {
+            "reviews": [
+                {
+                    "reviewId": "6620171",
+                    "ariaLabel": "Bought a Single Family home in 2021 in Dietz, Tucson, AZ. review",
+                    "isActionable": true,
+                    "moderationUrl": null,
+                    "reviewMetadataTexts": [
+                        "4/15/2021",
+                        "bevers1240"
+                    ],
+                    "shareFacebookText": "Share on Facebook",
+                    "shareFacebookUrl": "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.zillow.com%2Fprofile%2Ftheresasimmonsbrown%3Frx%3Dtrue%26review%3D6620171",
+                    "shareXText": "Share on X",
+                    "shareXUrl": "https://twitter.com/intent/tweet?text=I%20was%20just%20reviewed%20on%20%23Zillow&url=https%3A%2F%2Fwww.zillow.com%2Fprofile%2Ftheresasimmonsbrown%3Frx%3Dtrue%26review%3D6620171",
+                    "subRatings": [
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Local knowledge",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Process expertise",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Responsiveness",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Negotiation skills",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        }
+                    ],
+                    "transactionSummary": "Bought a Single Family home in 2021 in Dietz, Tucson, AZ.",
+                    "rating": 5,
+                    "ratingAriaLabel": "5.0 out of 5 stars",
+                    "ratingText": "5.0",
+                    "reportAProblemText": "Report a problem",
+                    "response": null,
+                    "reviewComment": "Made my first home purchase extremely easy! Always available for questions and very pleasant to work with. Would recommend her to anyone! I found her through this website so trust her and she will help you out!",
+                    "reviewForLabel": "Review for",
+                    "reviewForUrl": "/profile/theresasimmonsbrown",
+                    "reviewForValue": null,
+                    "__typename": "ProfessionalProfileDisplayReview"
+                },
+                {
+                    "reviewId": "6595107",
+                    "ariaLabel": "Bought a Single Family home in 2021 in Tucson, AZ. review",
+                    "isActionable": true,
+                    "moderationUrl": null,
+                    "reviewMetadataTexts": [
+                        "4/3/2021",
+                        "emajinfree"
+                    ],
+                    "shareFacebookText": "Share on Facebook",
+                    "shareFacebookUrl": "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.zillow.com%2Fprofile%2Ftheresasimmonsbrown%3Frx%3Dtrue%26review%3D6595107",
+                    "shareXText": "Share on X",
+                    "shareXUrl": "https://twitter.com/intent/tweet?text=I%20was%20just%20reviewed%20on%20%23Zillow&url=https%3A%2F%2Fwww.zillow.com%2Fprofile%2Ftheresasimmonsbrown%3Frx%3Dtrue%26review%3D6595107",
+                    "subRatings": [
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Local knowledge",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Process expertise",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Responsiveness",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Negotiation skills",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        }
+                    ],
+                    "transactionSummary": "Bought a Single Family home in 2021 in Tucson, AZ.",
+                    "rating": 5,
+                    "ratingAriaLabel": "5.0 out of 5 stars",
+                    "ratingText": "5.0",
+                    "reportAProblemText": "Report a problem",
+                    "response": null,
+                    "reviewComment": "Theresa\u2019s expertise was THE REASON I am now in my new home! She structured my last minute offer in such a manner that it was accepted amongst several competing offers! She expertly & patiently guided me throughout the escrow process in a way that reduced this 1st time buyer\u2019s stress. I felt that I was her ONLY CLIENT! Her immediate response to all my queries set my mind at ease. I would HIGHLY RECOMMEND that you select Theresa as your realtor!  She will go above & beyond anyone to exceed your expectations! I could write an essay to share all her professional attributes as a seasoned and sweet advocate for you! CHOSE THERESA!!! ??????????",
+                    "reviewForLabel": "Review for",
+                    "reviewForUrl": "/profile/theresasimmonsbrown",
+                    "reviewForValue": null,
+                    "__typename": "ProfessionalProfileDisplayReview"
+                },
+                {
+                    "reviewId": "6591610",
+                    "ariaLabel": "Bought a home in 2021. review",
+                    "isActionable": true,
+                    "moderationUrl": null,
+                    "reviewMetadataTexts": [
+                        "4/1/2021",
+                        "Luis Carlos  Hernandez Abascal"
+                    ],
+                    "shareFacebookText": "Share on Facebook",
+                    "shareFacebookUrl": "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.zillow.com%2Fprofile%2Ftheresasimmonsbrown%3Frx%3Dtrue%26review%3D6591610",
+                    "shareXText": "Share on X",
+                    "shareXUrl": "https://twitter.com/intent/tweet?text=Luis%20Carlos%20%20Hernandez%20Abascal%20just%20reviewed%20me%20on%20%23Zillow&url=https%3A%2F%2Fwww.zillow.com%2Fprofile%2Ftheresasimmonsbrown%3Frx%3Dtrue%26review%3D6591610",
+                    "subRatings": [
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Local knowledge",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Process expertise",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Responsiveness",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Negotiation skills",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        }
+                    ],
+                    "transactionSummary": "Bought a home in 2021.",
+                    "rating": 5,
+                    "ratingAriaLabel": "5.0 out of 5 stars",
+                    "ratingText": "5.0",
+                    "reportAProblemText": "Report a problem",
+                    "response": null,
+                    "reviewComment": "Theresa is absolutely great to work with. Caring, knowledgable and very responsive. The communication with her was great throughout the entire process. Would not hesitate recommending her as your agent. You won't be disappointed.",
+                    "reviewForLabel": "Review for",
+                    "reviewForUrl": "/profile/theresasimmonsbrown",
+                    "reviewForValue": null,
+                    "__typename": "ProfessionalProfileDisplayReview"
+                },
+                {
+                    "reviewId": "6316030",
+                    "ariaLabel": "Bought a home in 2020. review",
+                    "isActionable": true,
+                    "moderationUrl": null,
+                    "reviewMetadataTexts": [
+                        "11/26/2020",
+                        "mrjones1980"
+                    ],
+                    "shareFacebookText": "Share on Facebook",
+                    "shareFacebookUrl": "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.zillow.com%2Fprofile%2Ftheresasimmonsbrown%3Frx%3Dtrue%26review%3D6316030",
+                    "shareXText": "Share on X",
+                    "shareXUrl": "https://twitter.com/intent/tweet?text=I%20was%20just%20reviewed%20on%20%23Zillow&url=https%3A%2F%2Fwww.zillow.com%2Fprofile%2Ftheresasimmonsbrown%3Frx%3Dtrue%26review%3D6316030",
+                    "subRatings": [
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Local knowledge",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Process expertise",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Responsiveness",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Negotiation skills",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        }
+                    ],
+                    "transactionSummary": "Bought a home in 2020.",
+                    "rating": 5,
+                    "ratingAriaLabel": "5.0 out of 5 stars",
+                    "ratingText": "5.0",
+                    "reportAProblemText": "Report a problem",
+                    "response": null,
+                    "reviewComment": "Theresa has a passion and fire the was evident in all of our interactions. She made the entire process tolerable and at times pleasant. Every time we had a question or concern there was no delay in response. I will be recommending her to EVERYONE.",
+                    "reviewForLabel": "Review for",
+                    "reviewForUrl": "/profile/theresasimmonsbrown",
+                    "reviewForValue": null,
+                    "__typename": "ProfessionalProfileDisplayReview"
+                },
+                {
+                    "reviewId": "6185169",
+                    "ariaLabel": "Bought a home in 2020 in AZ 85730. review",
+                    "isActionable": true,
+                    "moderationUrl": null,
+                    "reviewMetadataTexts": [
+                        "10/5/2020",
+                        "mayaalejandraalbrecht"
+                    ],
+                    "shareFacebookText": "Share on Facebook",
+                    "shareFacebookUrl": "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.zillow.com%2Fprofile%2Ftheresasimmonsbrown%3Frx%3Dtrue%26review%3D6185169",
+                    "shareXText": "Share on X",
+                    "shareXUrl": "https://twitter.com/intent/tweet?text=I%20was%20just%20reviewed%20on%20%23Zillow&url=https%3A%2F%2Fwww.zillow.com%2Fprofile%2Ftheresasimmonsbrown%3Frx%3Dtrue%26review%3D6185169",
+                    "subRatings": [
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Local knowledge",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Process expertise",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Responsiveness",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Negotiation skills",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        }
+                    ],
+                    "transactionSummary": "Bought a home in 2020 in AZ 85730.",
+                    "rating": 5,
+                    "ratingAriaLabel": "5.0 out of 5 stars",
+                    "ratingText": "5.0",
+                    "reportAProblemText": "Report a problem",
+                    "response": null,
+                    "reviewComment": "Theresa was an amazing realtor! She walked us through the process and advocated for us every step of the way. We live in another state and she helped us out with finding a wonderful home and having realistic expectations.",
+                    "reviewForLabel": "Review for",
+                    "reviewForUrl": "/profile/theresasimmonsbrown",
+                    "reviewForValue": null,
+                    "__typename": "ProfessionalProfileDisplayReview"
+                },
+                {
+                    "reviewId": "5901041",
+                    "ariaLabel": "Bought and sold a Single Family home in 2020 in Groves lincoln park, Tucson, AZ. review",
+                    "isActionable": true,
+                    "moderationUrl": null,
+                    "reviewMetadataTexts": [
+                        "6/24/2020",
+                        "drbdlumley"
+                    ],
+                    "shareFacebookText": "Share on Facebook",
+                    "shareFacebookUrl": "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.zillow.com%2Fprofile%2Ftheresasimmonsbrown%3Frx%3Dtrue%26review%3D5901041",
+                    "shareXText": "Share on X",
+                    "shareXUrl": "https://twitter.com/intent/tweet?text=I%20was%20just%20reviewed%20on%20%23Zillow&url=https%3A%2F%2Fwww.zillow.com%2Fprofile%2Ftheresasimmonsbrown%3Frx%3Dtrue%26review%3D5901041",
+                    "subRatings": [
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Local knowledge",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Process expertise",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Responsiveness",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Negotiation skills",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        }
+                    ],
+                    "transactionSummary": "Bought and sold a Single Family home in 2020 in Groves lincoln park, Tucson, AZ.",
+                    "rating": 5,
+                    "ratingAriaLabel": "5.0 out of 5 stars",
+                    "ratingText": "5.0",
+                    "reportAProblemText": "Report a problem",
+                    "response": null,
+                    "reviewComment": "Theresa was wonderful. She kept us informed every step of the way. She looked out for our interests and not only helped us sell our old house quickly, but helped us find the perfect place to move into.",
+                    "reviewForLabel": "Review for",
+                    "reviewForUrl": "/profile/theresasimmonsbrown",
+                    "reviewForValue": null,
+                    "__typename": "ProfessionalProfileDisplayReview"
+                },
+                {
+                    "reviewId": "5840985",
+                    "ariaLabel": "Bought a Single Family home in 2020 in Drexel heights, Tucson, AZ. review",
+                    "isActionable": true,
+                    "moderationUrl": null,
+                    "reviewMetadataTexts": [
+                        "5/31/2020",
+                        "ivan dez"
+                    ],
+                    "shareFacebookText": "Share on Facebook",
+                    "shareFacebookUrl": "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.zillow.com%2Fprofile%2Ftheresasimmonsbrown%3Frx%3Dtrue%26review%3D5840985",
+                    "shareXText": "Share on X",
+                    "shareXUrl": "https://twitter.com/intent/tweet?text=I%20was%20just%20reviewed%20on%20%23Zillow&url=https%3A%2F%2Fwww.zillow.com%2Fprofile%2Ftheresasimmonsbrown%3Frx%3Dtrue%26review%3D5840985",
+                    "subRatings": [
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Local knowledge",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Process expertise",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Responsiveness",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Negotiation skills",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        }
+                    ],
+                    "transactionSummary": "Bought a Single Family home in 2020 in Drexel heights, Tucson, AZ.",
+                    "rating": 5,
+                    "ratingAriaLabel": "5.0 out of 5 stars",
+                    "ratingText": "5.0",
+                    "reportAProblemText": "Report a problem",
+                    "response": null,
+                    "reviewComment": "As a first time home buyer and having so many questions and decisions to make, Theresa was there for us to not only answer and give suggestions but helped us by avoiding bad off market deals. We met Theresa before the shut down and she still kept going doing a great job at showing us houses but keeping us and herself as safe as possible. Great at negotiating terms and we closed fast especially considering these Times.  After closing Theresa is still here for us providing resources and contacts to upgrade what we would like. She likes her job and is great with people and communication. We will use her again for our next home. Definitely recommend to anyone.",
+                    "reviewForLabel": "Review for",
+                    "reviewForUrl": "/profile/theresasimmonsbrown",
+                    "reviewForValue": null,
+                    "__typename": "ProfessionalProfileDisplayReview"
+                },
+                {
+                    "reviewId": "5839869",
+                    "ariaLabel": "Showed home in 2020 in AZ 85711. review",
+                    "isActionable": true,
+                    "moderationUrl": null,
+                    "reviewMetadataTexts": [
+                        "5/30/2020",
+                        "theblackestgold"
+                    ],
+                    "shareFacebookText": "Share on Facebook",
+                    "shareFacebookUrl": "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.zillow.com%2Fprofile%2Ftheresasimmonsbrown%3Frx%3Dtrue%26review%3D5839869",
+                    "shareXText": "Share on X",
+                    "shareXUrl": "https://twitter.com/intent/tweet?text=I%20was%20just%20reviewed%20on%20%23Zillow&url=https%3A%2F%2Fwww.zillow.com%2Fprofile%2Ftheresasimmonsbrown%3Frx%3Dtrue%26review%3D5839869",
+                    "subRatings": [
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Local knowledge",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Process expertise",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Responsiveness",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Negotiation skills",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        }
+                    ],
+                    "transactionSummary": "Showed home in 2020 in AZ 85711.",
+                    "rating": 5,
+                    "ratingAriaLabel": "5.0 out of 5 stars",
+                    "ratingText": "5.0",
+                    "reportAProblemText": "Report a problem",
+                    "response": null,
+                    "reviewComment": "Theresa has been great. My home buying experience is just starting, and she has been patient and helpful. I am looking forward to buying my first home when the time comes, thanks to her help.",
+                    "reviewForLabel": "Review for",
+                    "reviewForUrl": "/profile/theresasimmonsbrown",
+                    "reviewForValue": null,
+                    "__typename": "ProfessionalProfileDisplayReview"
+                },
+                {
+                    "reviewId": "5628415",
+                    "ariaLabel": "Showed home in 2020 in AZ 85748. review",
+                    "isActionable": true,
+                    "moderationUrl": null,
+                    "reviewMetadataTexts": [
+                        "2/25/2020",
+                        "maleah61977"
+                    ],
+                    "shareFacebookText": "Share on Facebook",
+                    "shareFacebookUrl": "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.zillow.com%2Fprofile%2Ftheresasimmonsbrown%3Frx%3Dtrue%26review%3D5628415",
+                    "shareXText": "Share on X",
+                    "shareXUrl": "https://twitter.com/intent/tweet?text=I%20was%20just%20reviewed%20on%20%23Zillow&url=https%3A%2F%2Fwww.zillow.com%2Fprofile%2Ftheresasimmonsbrown%3Frx%3Dtrue%26review%3D5628415",
+                    "subRatings": [
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Local knowledge",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Process expertise",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Responsiveness",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        },
+                        {
+                            "ariaLabel": "5 out of 5 stars",
+                            "label": "Negotiation skills",
+                            "value": 5,
+                            "__typename": "ProfessionalProfileDisplayReviewSubRating"
+                        }
+                    ],
+                    "transactionSummary": "Showed home in 2020 in AZ 85748.",
+                    "rating": 5,
+                    "ratingAriaLabel": "5.0 out of 5 stars",
+                    "ratingText": "5.0",
+                    "reportAProblemText": "Report a problem",
+                    "response": null,
+                    "reviewComment": "Theresa did a great job showing me homes! She was knowledgeable about the property she showed me and gave me great advice for the future.  Theresa personally took me to see properties and she help me understand terms I had not seen before.  I ultimately decided to move to a different state but will use her when I buy a home in Tucson in the future.",
+                    "reviewForLabel": "Review for",
+                    "reviewForUrl": "/profile/theresasimmonsbrown",
+                    "reviewForValue": null,
+                    "__typename": "ProfessionalProfileDisplayReview"
+                }
+            ],
+            "__typename": "ProfessionalProfileDisplayReviewsByEncodedZuidQueryResult"
+        }
+    }
+}
