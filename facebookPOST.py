@@ -7,9 +7,9 @@ import facebook
 
 graph = facebook.GraphAPI("access_token=token")
 
-if len(sys.argv) == 1:
+if len(sys.argv) == 2:
 	graph.put_photo(image=open(image_path, 'rb'), message)
-else if len(sys.argv) == 2:
+else if len(sys.argv) == 3:
 	graph.put_object(parent_object='me', connection_name='feed', message)
 else:
     print('Got to posting without a post?')
