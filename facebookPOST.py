@@ -21,9 +21,9 @@ if __name__ == "__main__":
         3 = image_path
     '''
     length=len(sys.argv)
-    if length==2:
+    if length==3:
         txt(sys.argv[1],sys.argv[2])
-    else if length==3:
+    else if length==4:
         img(sys.argv[1],sys.argv[2],sys.argv[3])
     else
         print("Needs [Token, Message, <image>] to POST to facebook")
