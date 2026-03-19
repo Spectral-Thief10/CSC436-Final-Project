@@ -1,17 +1,46 @@
 import eel
 import requests
 from dotenv import load_dotenv
+from bottle import route, request
+import time
 import os
 
 load_dotenv()
 
-eel.init("web")  
+APP_ID = "797268582819317"
+APP_SECRET = os.getenv("APP_SECRET")
+REDIRECT_URI = "http://localhost:8000/callback"
 
-# To be changed so that it's the users' business id, this is just for testing rn
-INSTAGRAM_BUSINESS_ID = "17841446410260449"
-# same with the access token
-ACCESS_TOKEN = os.getenv("IG_ACCESS_TOKEN")
-print("Token loaded?:", bool(ACCESS_TOKEN))
+user_access_token = None
+user_instagram_id = None
+
+# This function runs right as Meta sends the user back to RSMS.
+@route('/callback')
+def callback():
+    # Get necessary tokens to access user account
+    global user_access_token
+    global user_instagram_id
+
+    # Get code/proof user logged in successfully
+    code = request.query.code
+
+    print("Authorization code:", code)
+
+    # use the login code to turn into an access token.
+    short_token = changeCodeForToken(code)
+    # change the short-lived access token of about an hour to a long-lived one of mutliple days.
+    long_token = makeTokenLong(short_token)
+
+    user_access_token = long_token
+
+    print("User access token is:", long_token)
+
+    # use access token to get instagram id.
+    user_instagram_id = getInstagramBusinessID(user_access_token)
+
+    return "<h2>Instagram login was successful. You can close this window.</h2>"
+
+eel.init("web")  
 
 @eel.expose
 def postToFacebook(text):
@@ -23,11 +52,12 @@ def postToFacebook(text):
 def postToInstagram(text):
     image_url = "https://upload.wikimedia.org/wikipedia/commons/9/9f/Test_file_by_Davod.png" 
 
-    create_url = f"https://graph.facebook.com/v19.0/{INSTAGRAM_BUSINESS_ID}/media"
+    # create a media container
+    create_url = f"https://graph.facebook.com/v19.0/{user_instagram_id}/media"
     payload = {
         "image_url": image_url,
         "caption": text,
-        "access_token": ACCESS_TOKEN
+        "access_token": user_access_token
     }
 
     create_response = requests.post(create_url, data=payload)
@@ -39,10 +69,29 @@ def postToInstagram(text):
     
     container_id = create_data["id"]
 
-    publish_url = f"https://graph.facebook.com/v19.0/{INSTAGRAM_BUSINESS_ID}/media_publish"
+    # wait for the media to be ready
+    status_url = f"https://graph.facebook.com/v19.0/{container_id}"
+
+    # wait up to 10 seconds
+    for i in range(10): 
+        status_response = requests.get(status_url, params={
+            "fields": "status_code",
+            "access_token": user_access_token
+        }).json()
+
+        status = status_response.get("status_code")
+        print("Status:", status)
+
+        if status == "FINISHED":
+            break
+
+        time.sleep(1)
+
+    # publish to instagram
+    publish_url = f"https://graph.facebook.com/v19.0/{user_instagram_id}/media_publish"
     publish_payload = {
         "creation_id": container_id,
-        "access_token": ACCESS_TOKEN
+        "access_token": user_access_token
     }
 
     publish_response = requests.post(publish_url, data=publish_payload)
@@ -51,6 +100,66 @@ def postToInstagram(text):
     print("Instagram response:", publish_data)
     print(f"Posted: {text} to Instagram")
 
+def changeCodeForToken(code):
+    url = "https://graph.facebook.com/v19.0/oauth/access_token"
+    params = {
+        "client_id": APP_ID,
+        "redirect_uri": REDIRECT_URI,
+        "client_secret": APP_SECRET,
+        "code": code
+    }
+    response = requests.get(url, params=params).json()
+    return response["access_token"]
+
+def makeTokenLong(short_token):
+    url = "https://graph.facebook.com/v19.0/oauth/access_token"
+    params = {
+        "grant_type": "fb_exchange_token",
+        "client_id": APP_ID,
+        "client_secret": APP_SECRET,
+        "fb_exchange_token": short_token
+    }
+    response = requests.get(url, params=params).json()
+    return response["access_token"]
+
+def getInstagramBusinessID(access_token):
+
+    # get all the pages that the user manages
+    pages_url = "https://graph.facebook.com/v19.0/me/accounts"
+    pages_params = {
+        "access_token": access_token
+    }
+
+    pages_response = requests.get(pages_url, params=pages_params).json()
+
+    # if could not find pages
+    if "data" not in pages_response or len(pages_response["data"]) == 0:
+        print("No pages found:", pages_response)
+        return None
+
+    # loop through each page to find connected instagram account
+    for page in pages_response["data"]:
+        page_id = page["id"]
+        print("Checking page:", page_id)
+
+        # check if page has an instagram account
+        ig_url = f"https://graph.facebook.com/v19.0/{page_id}"
+        ig_params = {
+            "fields": "instagram_business_account",
+            "access_token": access_token
+        }
+
+        ig_response = requests.get(ig_url, params=ig_params).json()
+
+        # if yes, then return the instagram business id
+        if "instagram_business_account" in ig_response:
+            ig_id = ig_response["instagram_business_account"]["id"]
+            print("Found Instagram Business ID:", ig_id)
+            return ig_id
+
+    # else, return no account found
+    print("No Instagram business account found on any page.")
+    return None
 
 # Start the index.html file
 eel.start("index.html")

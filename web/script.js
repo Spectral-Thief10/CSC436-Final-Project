@@ -12,5 +12,16 @@ function post(){
     }
 }
 
+function loginInstagram() {
+  // The app's ID.
+  const clientId = "797268582819317";
+  // Send user back to RSMS app.
+  const redirectUri = "http://localhost:8000/callback";
+  // Required permissions for Instagram API
+  const scope = "pages_show_list,pages_read_engagement,instagram_basic,instagram_content_publish,business_management";
+  // Redirects user to log into meta, once done, sends user back to RSMS.
+  window.open(`https://www.facebook.com/v19.0/dialog/oauth?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}&response_type=code`);
+}
+
 // Onclick of the button
 document.querySelector("button").onclick = post
