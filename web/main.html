@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>RSMS</title>
+  </head>
+  <body>
+    <p><label for="Text">Text</label></p>
+    <textarea id="Text" name="" rows="8" cols="50">Enter the text for your post here.</textarea>
+    <br>
+
+    <fieldset>
+        <legend>Choose which sites to post to:</legend>
+        <div>
+            <input type="checkbox" id="Facebook" name="Facebook" />
+            <label for="Facebook">Facebook</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="Instagram" name="Instagram" />
+            <label for="Instagram">Instagram</label>
+        </div>
+    </fieldset>
+    <label for="image">Choose a picture:</label>
+    <input type="file" id="image" name="image" accept="image/jpeg" />
+    <button>Submit</button>
+
+    </fieldset>
+    <button onclick="loginInstagram()">Login with Instagram</button>
+    
+    <script type="text/javascript" src="../eel.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

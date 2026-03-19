@@ -4,28 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
     <title>RSMS</title>
   </head>
   <body>
-    <p><label for="Text">Text</label></p>
-    <textarea id="Text" name="" rows="8" cols="50">Enter the text for your post here.</textarea>
+
+    <p>Facebook</p>
+    <label for="FacebookUserName">Username</label>
+    <input type="text" id="FacebookUserName" name="">
+    <label for="FacebookPassword">Password</label>
+    <input type="text" id="FacebookPassword" name="">
+
+    <p>Instagram</p>
+    <label for="InstagramUserName">Username</label>
+    <input type="text" id="InstagramUserName" name="">
+    <label for="InstagramPassword">Password</label>
+    <input type="text" id="InstagramPassword" name="">
     <br>
+    <button>Login</button>
 
-    <fieldset>
-        <legend>Choose which sites to post to:</legend>
-        <div>
-            <input type="checkbox" id="Facebook" name="Facebook" />
-            <label for="Facebook">Facebook</label>
-        </div>
-
-        <div>
-            <input type="checkbox" id="Instagram" name="Instagram" />
-            <label for="Instagram">Instagram</label>
-        </div>
-    </fieldset>
-    <button>Submit</button>
     <script type="text/javascript" src="../eel.js"></script>
-    <script src="./script.js"></script>
+    <script src="./login_script.js"></script>
   </body>
 </html>
