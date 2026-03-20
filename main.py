@@ -46,16 +46,10 @@ eel.init("web")
 
 @eel.expose
 def postToFacebook(text,image):
-    """
-    GetUsername And GetPassword
-    
-    """
-    
-    
     if (image==""):
-        facebookPOST.txt(token,text)
+        facebookPOST.txt(user_access_token,text)
     else:
-        facebookPOST.img(token,text,image)
+        facebookPOST.img(user_access_token,text,image)
 
 # temporary, still need to make it so it works with anybody's instagram business account.
 @eel.expose
