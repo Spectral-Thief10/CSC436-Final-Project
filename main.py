@@ -48,7 +48,6 @@ def postToFacebook(text,image):
     print(f"Posted: {text} to facebook")
 
 
-# temporary, still need to make it so it works with anybody's instagram business account.
 @eel.expose
 def postToInstagram(text,image):
     image_url = "https://upload.wikimedia.org/wikipedia/commons/9/9f/Test_file_by_Davod.png" 
