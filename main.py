@@ -5,6 +5,7 @@ from bottle import route, request
 import time
 import os
 import json
+import facebookPOST
 
 load_dotenv()
 
@@ -45,8 +46,10 @@ eel.init("web")
 
 @eel.expose
 def postToFacebook(text,image):
-    print(f"Posted: {text} to facebook")
-
+    if (image==""):
+        facebookPOST.txt(user_access_token,text)
+    else:
+        facebookPOST.img(user_access_token,text,image)
 
 @eel.expose
 def postToInstagram(text,image):
