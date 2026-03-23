@@ -52,7 +52,7 @@ def postToFacebook(text,image):
         facebookPOST.img(user_access_token,text,image)
 
 @eel.expose
-def postToInstagram(text,image):
+def postToInstagram(text):
     image_url = "https://upload.wikimedia.org/wikipedia/commons/9/9f/Test_file_by_Davod.png" 
 
     # create a media container
@@ -110,7 +110,7 @@ def writeLoginFile(facebookUsername,facebookPassword,instagramUsername,instagram
              "instagram":{"username":instagramUsername, "password":instagramPassword}}
         
         f.write(json.dumps(x))
-        
+
 def changeCodeForToken(code):
     url = "https://graph.facebook.com/v19.0/oauth/access_token"
     params = {
