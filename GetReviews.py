@@ -81,4 +81,24 @@ def WriteToFile():
     response = requests.post('https://www.zillow.com/graphql', cookies=cookies, headers=headers, json=json_data)
     with open("reviews.json","w") as f:
         json.dump(response.json(), f, indent=4)
-WriteToFile()
+    f.close()
+
+def GetText():
+    messages = []
+    try:
+        with open("reviews.json","r") as file:
+            check = False
+            for line in file:
+                clean = line.strip()
+                if("rating" in clean and "ratingAriaLabel" not in clean and "ratingText" not in clean):
+                    check = False
+                    if(int(clean[len(clean)-2]) >=4):
+                       check = True
+                if("reviewComment" in clean and check == True):
+                    clean = clean.strip("\"reviewComment\": ").strip("\",")
+                    messages.append(clean)
+                    check = False
+        file.close()
+    except FileNotFoundError:
+        print("File was not found")
+    return messages
