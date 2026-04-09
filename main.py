@@ -6,6 +6,7 @@ import time
 import os
 import json
 import facebookPOST
+import schedulePosts
 
 load_dotenv()
 
@@ -52,8 +53,8 @@ def postToFacebook(text,image):
         facebookPOST.img(user_access_token,text,image)
 
 @eel.expose
-def postToInstagram(text):
-    image_url = "https://upload.wikimedia.org/wikipedia/commons/9/9f/Test_file_by_Davod.png" 
+def postToInstagram(text,image):
+    image_url = "https://upload.wikimedia.org/wikipedia/commons/9/9f/Test_file_by_Davod.png"
 
     # create a media container
     create_url = f"https://graph.facebook.com/v19.0/{user_instagram_id}/media"

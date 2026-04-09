@@ -25,5 +25,30 @@ function loginInstagram() {
   window.open(`https://www.facebook.com/v19.0/dialog/oauth?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}&response_type=code`);
 }
 
+function schedulePost() {
+    const text = document.getElementById("Text").value;
+    const day = document.getElementById("scheduleDay").value;
+    const time = document.getElementById("scheduleTime").value;
+    const repeat = document.getElementById("repeatType").value;
+
+    if (!time) {
+        alert("Please select a time");
+        return;
+    }
+
+    const [hour, minute] = time.split(":").map(Number);
+
+    eel.createCalendarEvent(
+        "Social Media Post Reminder",
+        text,
+        day,
+        hour,
+        minute,
+        repeat
+    )(function(filename) {
+        alert("Reminder created! Open " + filename + " to add it to Apple Calendar.");
+    });
+}
+
 // Onclick of the button
 document.querySelector("button").onclick = post
