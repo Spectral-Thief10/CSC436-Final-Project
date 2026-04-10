@@ -86,9 +86,10 @@ if __name__ == "__main__":
         4 = facebook_page_id
     '''
     length=len(sys.argv)
-    if length==3:
-        txt(sys.argv[1],sys.argv[2], sys.argv[3])
-    elif length==4:
-        img(sys.argv[1],sys.argv[2],sys.argv[3], sys.argv[4])
+    if length==4:
+        if (sys.argv[3] is ""):
+            txt(sys.argv[1],sys.argv[2], sys.argv[4])
+        else:
+            img(sys.argv[1],sys.argv[2],sys.argv[3], sys.argv[4])
     else:
         print("Needs [Token, Message, <image_path>, facebook_page_id] to POST to facebook")
