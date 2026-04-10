@@ -25,5 +25,22 @@ function loginInstagram() {
   window.open(`https://www.facebook.com/v19.0/dialog/oauth?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}&response_type=code`);
 }
 
-// Onclick of the button
+function getRandomReview(){
+    eel.getRandomReview()
+}
+
+eel.expose(changeText)
+function changeText(text){
+
+    document.getElementById("Text").innerHTML = text
+}
+
+function notification(){
+    dateTime = document.getElementById("dateTime").value
+    window.alert(dateTime)
+}
+
+// Onclick of the buttons
 document.querySelector("button").onclick = post
+document.getElementById("reviewButton").onclick = getRandomReview
+document.getElementById("notificationButton").onclick = notification

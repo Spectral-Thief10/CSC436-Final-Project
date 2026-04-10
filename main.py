@@ -6,6 +6,8 @@ import time
 import os
 import json
 import facebookPOST
+import GetReviews
+import random
 
 load_dotenv()
 
@@ -52,7 +54,7 @@ def postToFacebook(text,image):
         facebookPOST.img(user_access_token,text,image)
 
 @eel.expose
-def postToInstagram(text):
+def postToInstagram(text,image):
     image_url = "https://upload.wikimedia.org/wikipedia/commons/9/9f/Test_file_by_Davod.png" 
 
     # create a media container
@@ -171,6 +173,13 @@ def getInstagramBusinessID(access_token):
     # else, return no account found
     print("No Instagram business account found on any page.")
     return None
+
+@eel.expose()
+def getRandomReview():
+    messages = GetReviews.GetText()
+    i = random.randint(0, len(messages) - 1)
+    message = messages[i]
+    eel.changeText(message)
 
 # Start the index.html file
 eel.start("index.html")
