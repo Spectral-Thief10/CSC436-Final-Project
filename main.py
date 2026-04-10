@@ -6,6 +6,7 @@ import time
 import os
 import json
 import facebookPOST
+import schedulePosts
 import GetReviews
 import random
 
@@ -54,7 +55,7 @@ def postToFacebook(text,image):
         facebookPOST.img(user_access_token,text,image)
 
 @eel.expose
-def postToInstagram(text,image):
+def postToInstagram(text):
     image_url = "https://upload.wikimedia.org/wikipedia/commons/9/9f/Test_file_by_Davod.png" 
 
     # create a media container

@@ -44,3 +44,30 @@ function notification(){
 document.querySelector("button").onclick = post
 document.getElementById("reviewButton").onclick = getRandomReview
 document.getElementById("notificationButton").onclick = notification
+function schedulePost() {
+    const text = document.getElementById("Text").value;
+    const day = document.getElementById("scheduleDay").value;
+    const time = document.getElementById("scheduleTime").value;
+    const repeat = document.getElementById("repeatType").value;
+
+    if (!time) {
+        alert("Please select a time");
+        return;
+    }
+
+    const [hour, minute] = time.split(":").map(Number);
+
+    eel.createCalendarEvent(
+        "Social Media Post Reminder",
+        text,
+        day,
+        hour,
+        minute,
+        repeat
+    )(function(filename) {
+        alert("Reminder created! Open " + filename + " to add it to Apple Calendar.");
+    });
+}
+
+// Onclick of the button
+document.querySelector("button").onclick = post

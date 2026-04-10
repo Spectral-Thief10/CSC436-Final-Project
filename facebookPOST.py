@@ -3,7 +3,6 @@ filename: facebookPOST.py
 author: Joshua S. Andrews
 purpose: to post a message to a facebook feed utilizing facebook-sdk
 """
-import facebook
 
 def img(token, message, image_path):
     import requests
