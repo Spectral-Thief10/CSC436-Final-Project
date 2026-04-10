@@ -6,8 +6,10 @@ function post(){
     text = document.getElementById("Text").value
     image = document.getElementById("image").value; 
     
+    facebookPageId = document.getElementById("getPageID").value; 
+
     if(facebook){
-        eel.postToFacebook(text,image)
+        eel.postToFacebook(text,image,facebookPageId)
     }
     if(instagram){
         eel.postToInstagram(text,image)
