@@ -86,7 +86,7 @@ if __name__ == "__main__":
         4 = facebook_page_id
     '''
     length=len(sys.argv)
-    if length==4:
+    if length==5:
         if (sys.argv[3] == ""):
             print(txt(sys.argv[1],sys.argv[2], sys.argv[4]))
         else:
