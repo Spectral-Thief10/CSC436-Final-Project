@@ -27,9 +27,9 @@ def img(token, message, image_path,facebook_page_id):
         
         if response.status_code == 200:
             post_id = response.json().get('id')
-            print(f"Successfully posted: Post ID: {post_id}")
+            return (f"Successfully posted: Post ID: {post_id}")
     except requests.exceptions.RequestException as e:
-        print(f"An error occurred: {e}")
+        return (f"An error occurred: {e}")
 
 def txt(token, msg,facebook_page_id):
     import requests
@@ -88,8 +88,8 @@ if __name__ == "__main__":
     length=len(sys.argv)
     if length==4:
         if (sys.argv[3] == ""):
-            txt(sys.argv[1],sys.argv[2], sys.argv[4])
+            print(txt(sys.argv[1],sys.argv[2], sys.argv[4]))
         else:
-            img(sys.argv[1],sys.argv[2],sys.argv[3], sys.argv[4])
+            print(img(sys.argv[1],sys.argv[2],sys.argv[3], sys.argv[4]))
     else:
         print("Needs [Token, Message, image_path, facebook_page_id] to POST to facebook")
