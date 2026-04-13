@@ -4,7 +4,7 @@ author: Joshua S. Andrews
 purpose: to post a message to a facebook feed utilizing facebook-sdk
 """
 
-def img(token, message, image_path,facebook_page_id):
+def img(token, msg, image_path,facebook_page_id):
     import requests
     
     page_id=getFacebook_page_id(facebook_page_id)
