@@ -52,8 +52,8 @@ def txt(token, msg,facebook_page_id):
         print(f"An error occurred: {e}")
 
 def getFacebook_page_id(facebook_page_id):
-    ''' 
-    Check if facebook_page_id.txt exists, if not have user enter page ID 
+    '''
+    Check if facebook_page_id.txt exists, if not have user enter page ID
     and create file, then return text from file
     '''
     if (facebook_page_id == ""):
@@ -74,7 +74,7 @@ def getFacebook_page_id(facebook_page_id):
         with open('facebook_page_id.txt', 'w') as f:
             f.write(facebook_page_id)
             f.close
-        return facebook_page_id        
+        return facebook_page_id
     
 if __name__ == "__main__":
     import sys
@@ -92,4 +92,4 @@ if __name__ == "__main__":
         else:
             img(sys.argv[1],sys.argv[2],sys.argv[3], sys.argv[4])
     else:
-        print("Needs [Token, Message, <image_path>, facebook_page_id] to POST to facebook")
+        print("Needs [Token, Message, image_path, facebook_page_id] to POST to facebook")
