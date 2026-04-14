@@ -16,7 +16,7 @@ APP_ID = "797268582819317"
 APP_SECRET = os.getenv("APP_SECRET")
 REDIRECT_URI = "http://localhost:8000/callback"
 
-user_access_token = None
+user_access_token = "EAALVHI6rZAfUBRD9R3gMy1i5pYuiuXasf3yygjYTi1ITYEGdvgmbUVRTlM6tfOdhLLySO81EBZAo9AAzZCA6rgsZAPZBxcXBkUxvi0oM24Ds1ZC0efHsZAu4F7Hf5agV9ufkrtq0TssKrqg9B8IJLlZBZAEEpvYhl0vcAw7ygPpKHws6wPn8SZAiVZAAqiBhWsu"
 user_instagram_id = None
 
 # This function runs right as Meta sends the user back to RSMS.
