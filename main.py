@@ -49,6 +49,7 @@ eel.init("web")
 
 @eel.expose
 def postToFacebook(text,image, facebook_page_id):
+    callback()
     if (image==""):
         return facebookPOST.txt(user_access_token,text, facebook_page_id)
     else:
