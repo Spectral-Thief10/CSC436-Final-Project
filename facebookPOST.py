@@ -47,9 +47,9 @@ def txt(token, msg,facebook_page_id):
         
         if response.status_code == 200:
             post_id = response.json().get('id')
-            print(f"Successfully posted: Post ID: {post_id}")
+            return (f"Successfully posted: Post ID: {post_id}")
     except requests.exceptions.RequestException as e:
-        print(f"An error occurred: {e}")
+        return (f"An error occurred: {e}")
 
 def getFacebook_page_id(facebook_page_id):
     '''
