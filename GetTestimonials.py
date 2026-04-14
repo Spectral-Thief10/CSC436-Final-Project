@@ -78,10 +78,6 @@ def RunScraper():
         # Close the browser
         driver.quit()
     return unique_testimonials
+test = RunScraper()
 
-def GetText():
-    unique = RunScraper()
-    for i in unique:
-        print(i + "\n")
-GetText()
 
