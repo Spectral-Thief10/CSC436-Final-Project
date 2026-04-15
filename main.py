@@ -9,12 +9,40 @@ import facebookPOST
 import schedulePosts
 import GetReviews
 import random
+import time
+import requests
+import cloudinary
+import cloudinary.uploader
 
 load_dotenv()
+
+cloudinary.config(
+    cloud_name=os.getenv("CLOUDINARY_CLOUD_NAME"),
+    api_key=os.getenv("CLOUDINARY_API_KEY"),
+    api_secret=os.getenv("CLOUDINARY_API_SECRET")
+)
 
 APP_ID = "797268582819317"
 APP_SECRET = os.getenv("APP_SECRET")
 REDIRECT_URI = "http://localhost:8000/callback"
+
+def uploadToCloudinary(file_path):
+    try:
+        response = cloudinary.uploader.upload(file_path)
+        return {
+            "url": response["secure_url"],
+            "public_id": response["public_id"]
+        }
+    except Exception as e:
+        print("Cloudinary upload error:", e)
+        return None
+
+def deleteFromCloudinary(public_id):
+    try:
+        result = cloudinary.uploader.destroy(public_id)
+        print("Deleted from Cloudinary:", result)
+    except Exception as e:
+        print("Error deleting image:", e)
 
 user_access_token = None
 user_instagram_id = None
@@ -56,8 +84,23 @@ def postToFacebook(text,image, facebook_page_id):
         return facebookPOST.img(user_access_token,text,image, facebook_page_id)
 
 @eel.expose
-def postToInstagram(text):
-    image_url = "https://upload.wikimedia.org/wikipedia/commons/9/9f/Test_file_by_Davod.png" 
+def postToInstagram(text, image):
+    file_path = resolveImagePath(image)
+
+    if file_path is None:
+        print("No image provided")
+        return
+    
+    upload = uploadToCloudinary(file_path)
+
+    if upload is None:
+        print("failed to upload image")
+        return
+    
+    image_url = upload["url"]
+    public_id = upload["public_id"]
+    
+    print("Public Image URL:", image_url)
 
     # create a media container
     create_url = f"https://graph.facebook.com/v19.0/{user_instagram_id}/media"
@@ -105,7 +148,10 @@ def postToInstagram(text):
     publish_data = publish_response.json()
 
     print("Instagram response:", publish_data)
+
     print(f"Posted: {text} to Instagram")
+
+    deleteFromCloudinary(public_id)
 
 @eel.expose
 def writeLoginFile(facebookUsername,facebookPassword,instagramUsername,instagramPassword):
@@ -174,6 +220,23 @@ def getInstagramBusinessID(access_token):
 
     # else, return no account found
     print("No Instagram business account found on any page.")
+    return None
+
+def resolveImagePath(image_input):
+    if not image_input:
+        return None
+
+    # If user already gave full path
+    if os.path.exists(image_input):
+        return image_input
+
+    # If user gave just filename, assume it's in /web
+    web_path = os.path.join("web", image_input)
+
+    if os.path.exists(web_path):
+        return web_path
+
+    print("Image not found:", image_input)
     return None
 
 @eel.expose()
