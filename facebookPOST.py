@@ -5,6 +5,7 @@ purpose: to post a message to a facebook feed utilizing facebook-sdk
 """
 
 def img(token, msg, image_path,facebook_page_id):
+    print("Posting Image")
     import requests
     
     page_id=getFacebook_page_id(facebook_page_id)
@@ -32,6 +33,7 @@ def img(token, msg, image_path,facebook_page_id):
         return (f"An error occurred: {e}")
 
 def txt(token, msg,facebook_page_id):
+    print("Posting Text")
     import requests
     
     page_id=getFacebook_page_id(facebook_page_id)
