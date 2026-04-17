@@ -66,9 +66,7 @@ function schedulePost() {
         hour,
         minute,
         repeat
-    )(function(filename) {
-        alert("Reminder created! Open " + filename + " to add it to Apple Calendar.");
-    });
+    )
 }
 
 // Onclick of the button

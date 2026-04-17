@@ -2,6 +2,9 @@ from icalendar import Calendar, Event, Alarm
 from datetime import datetime, timedelta
 import eel
 import pytz
+import os
+import platform
+import subprocess
 
 @eel.expose
 def createCalendarEvent(title, description, day_of_week, hour, minute, repeat_type):
@@ -57,6 +60,16 @@ def createCalendarEvent(title, description, day_of_week, hour, minute, repeat_ty
         f.write(cal.to_ical())
 
     print(f"Calendar file created :{filename}")
+
+    try:
+        if platform.system() == "Darwin":
+            subprocess.run(["open", filename])
+        elif platform.system() == "Windows":
+            os.startfile(filename)
+        else:
+            subprocess.run(["xdg-open", filename])
+    except Exception as e:
+        print("Error opening calendar file:", e)
     return filename
 
 def get_weekday_index(day):
