@@ -31,10 +31,24 @@ function getRandomReview(){
     eel.getRandomReview()
 }
 
+function selectImage(){
+    eel.selectImage();
+}
+
 eel.expose(changeText)
 function changeText(text){
 
     document.getElementById("Text").innerHTML = text
+}
+
+eel.expose(changeImagePath)
+function changeImagePath(imagePath){
+    document.getElementById("image").value = imagePath
+}
+
+eel.expose(printError)
+function printError(message){
+    window.alert(message)
 }
 
 function notification(){
@@ -44,6 +58,7 @@ function notification(){
 
 // Onclick of the buttons
 document.querySelector("button").onclick = post
+document.getElementById("imageButton").onclick = selectImage
 document.getElementById("reviewButton").onclick = getRandomReview
 document.getElementById("notificationButton").onclick = notification
 function schedulePost() {

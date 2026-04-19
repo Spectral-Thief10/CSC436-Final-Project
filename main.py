@@ -8,11 +8,14 @@ import json
 import facebookPOST
 import schedulePosts
 import GetReviews
+import GetTestimonials
 import random
 import time
 import requests
 import cloudinary
 import cloudinary.uploader
+import tkinter 
+import tkinter.filedialog as filedialog
 
 load_dotenv()
 
@@ -240,10 +243,27 @@ def resolveImagePath(image_input):
 
 @eel.expose()
 def getRandomReview():
-    messages = GetReviews.GetText()
+    reviews = GetReviews.GetText()
+    tesimonials = GetTestimonials.GetTestimonials()
+    messages = reviews + tesimonials
     i = random.randint(0, len(messages) - 1)
     message = messages[i]
+    print(message)
     eel.changeText(message)
+
+@eel.expose
+def selectImage():
+    print("Here")
+    root = tkinter.Tk()
+    root.attributes("-topmost", True)
+    root.withdraw()
+    image_path = filedialog.askopenfilename(
+    title="Select an Image",
+    filetypes=[("Image Files", "*.png *.jpg *.jpeg *.bmp *.gif")]
+    )
+    print(image_path)
+    eel.changeImagePath(image_path)
+
 
 # Start the index.html file
 eel.start("index.html")

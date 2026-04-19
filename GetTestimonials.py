@@ -78,6 +78,12 @@ def RunScraper():
         # Close the browser
         driver.quit()
     return unique_testimonials
+
+def GetTestimonials():
+    return test
+
 test = RunScraper()
+
+
 
 
