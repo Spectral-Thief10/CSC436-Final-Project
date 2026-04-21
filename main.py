@@ -155,14 +155,6 @@ def postToInstagram(text, image):
 
     deleteFromCloudinary(public_id)
 
-@eel.expose
-def writeLoginFile(facebookUsername,facebookPassword,instagramUsername,instagramPassword):
-    with open("login.json", "w") as f:
-        x = {"facebook": {"username":facebookUsername, "password":facebookPassword},
-             "instagram":{"username":instagramUsername, "password":instagramPassword}}
-        
-        f.write(json.dumps(x))
-
 def changeCodeForToken(code):
     url = "https://graph.facebook.com/v19.0/oauth/access_token"
     params = {
