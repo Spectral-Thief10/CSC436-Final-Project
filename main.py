@@ -80,10 +80,11 @@ eel.init("web")
 
 @eel.expose
 def postToFacebook(text,image, facebook_page_id):
+    token = facebookPOST.getToken()
     if (image==""):
-        return facebookPOST.txt(user_access_token,text, facebook_page_id)
+        return facebookPOST.txt(token,text, facebook_page_id)
     else:
-        return facebookPOST.img(user_access_token,text,image, facebook_page_id)
+        return facebookPOST.img(token,text,image, facebook_page_id)
 
 @eel.expose
 def postToInstagram(text, image):
