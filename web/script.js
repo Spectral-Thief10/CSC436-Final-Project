@@ -84,5 +84,3 @@ function schedulePost() {
     )
 }
 
-// Onclick of the button
-document.querySelector("button").onclick = post

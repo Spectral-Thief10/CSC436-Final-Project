@@ -245,7 +245,6 @@ def getRandomReview():
 
 @eel.expose
 def selectImage():
-    print("Here")
     root = tkinter.Tk()
     root.attributes("-topmost", True)
     root.withdraw()
