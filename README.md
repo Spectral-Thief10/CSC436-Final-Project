@@ -1,4 +1,4 @@
-# CSC436-Final-Project
+# CSC436-Final-Project README
 
 Expected Behavior
 1. Application launches and opens browser
@@ -8,3 +8,9 @@ Expected Behavior
   OR
    User schedules desired reminders and clicks submit
 5. Confirmation message on success or failure of operation is rendered
+
+To Get Business Page ID for posting to facebook
+1. Log into https://business.facebook.com/
+2. Click on settings on side pane
+3. Click on Page Name
+4. Page ID is listed under Page Info
