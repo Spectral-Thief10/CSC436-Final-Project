@@ -2,27 +2,80 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>RSMS</title>
   </head>
   <body>
-
-    <p>Facebook</p>
-    <label for="FacebookUserName">Username</label>
-    <input type="text" id="FacebookUserName" name="">
-    <label for="FacebookPassword">Password</label>
-    <input type="text" id="FacebookPassword" name="">
-
-    <p>Instagram</p>
-    <label for="InstagramUserName">Username</label>
-    <input type="text" id="InstagramUserName" name="">
-    <label for="InstagramPassword">Password</label>
-    <input type="text" id="InstagramPassword" name="">
+    <p><label for="Text">Text</label></p>
+    <textarea id="Text" name="" rows="8" cols="50">Enter the text for your post here.</textarea>
     <br>
-    <button>Login</button>
+
+    <fieldset>
+        <legend>Choose which sites to post to:</legend>
+        <div>
+            <input type="checkbox" id="Facebook" name="Facebook" />
+            <label for="Facebook">Facebook</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="Instagram" name="Instagram" />
+            <label for="Instagram">Instagram</label>
+        </div>
+    </fieldset>
+    <label for="image">Choose a picture:</label>
+    <input type="text" id="image" name="image" size="70"/>
+    <button id="imageButton" onclick="selectImage()">Choose image</button>
+
+    <br>
+    <button id = "SubmitButton" onclick ="post()">Submit</button>
+
+    <br>
+    </fieldset>
+    <button id = "reviewButton">Get Random Review</button>
+
+    </fieldset>
+    <button onclick="loginInstagram()">Login with Instagram</button>
+
+    <br>
+    
+    <h3>Schedule a Post Reminder</h3>
+
+    <label for="scheduleDay">Day:</label>
+    <select id="scheduleDay">
+      <option value="monday">Monday</option>
+      <option value="tuesday">Tuesday</option>
+      <option value="wednesday">Wednesday</option>
+      <option value="thursday">Thursday</option>
+      <option value="friday">Friday</option>
+      <option value="saturday">Saturday</option>
+      <option value="sunday">Sunday</option>
+    </select>
+
+    <br>
+
+    <label for="scheduleTime">Time:</label>
+    <input type="time" id="scheduleTime">
+
+    <br><br>
+
+    <label for="repeatType">Repeat:</label>
+    <select id="repeatType">
+      <option value="none">One-time</option>
+      <option value="daily">Daily</option>
+      <option value="weekly">Weekly</option>
+      <option value="monthly">Monthly</option>
+    </select>
+
+    <button onclick="schedulePost()">Schedule Reminder</button>
+
+
+    <br>
+    <p>To get page ID, log in to facebook and click about->page transparency->scroll to bottom for ID number:</p>
+    <label for="getPageID">Page Id</label>
+    <input type="text" id="getPageID" name="getPageID"/>
 
     <script type="text/javascript" src="../eel.js"></script>
-    <script src="./login_script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
