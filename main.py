@@ -83,7 +83,7 @@ def postToFacebook(text,image, facebook_page_id):
     print("going to facebookPost.py")
     token = facebookPOST.get_token()
     print(f"token: {token}")
-    facebook_page_id = facebookPOST.getFacebook_page_id(id)
+    facebook_page_id = facebookPOST.getFacebook_page_id(facebook_page_id)
     if image == "":
         return facebookPOST.txt(token, text, facebook_page_id)
     else:
