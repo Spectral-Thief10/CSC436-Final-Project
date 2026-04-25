@@ -79,11 +79,11 @@ def callback():
 eel.init("web")  
 
 @eel.expose
-def postToFacebook(text,image, facebook_page_id):
+def postToFacebook(text,image, id):
     print("going to facebookPost.py")
     token = facebookPOST.get_token()
     print(f"token: {token}")
-    facebook_page_id = facebookPOST.getFacebook_page_id(facebook_page_id)
+    facebook_page_id = facebookPOST.getFacebook_page_id(id)
     if image == "":
         return facebookPOST.txt(token, text, facebook_page_id)
     else:
